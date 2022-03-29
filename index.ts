@@ -2,7 +2,7 @@ import { getObstacleEvents } from './computer-vision';
 
 // ----- Types -----
 interface AutonomousCar {
-    isRunning: boolean
+    isRunning?: boolean
 }
 
 // ----- Classes -----
