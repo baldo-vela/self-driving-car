@@ -35,6 +35,15 @@ class Car implements AutonomousCar {
     }
 
     respond(events: Events) {
+        Object.keys(events).forEach(eventKey => {
+            if (events[eventKey] === false) return;
+            if (eventKey === 'ObstacleLeft') {
+                this.steeringControl.turn('right');
+            }
+            if (eventKey === 'ObstacleRight') {
+                this.steeringControl.turn('left');
+            }
+        })
         if (this.isRunning) {
             return console.log('Running...');
         } else {
