@@ -19,3 +19,8 @@ class Car implements AutonomousCar {
 }
 
 // ----- Executables -----
+const autonomousCar =  new Car(
+    {
+        isRunning: true
+    }
+)
