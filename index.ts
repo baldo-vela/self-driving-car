@@ -3,10 +3,15 @@ import { getObstacleEvents } from './computer-vision';
 // ----- Types -----
 interface AutonomousCar {
     isRunning?: boolean
+    respond: (events: Events) => void;
 }
 
 interface AutonomousCarProps {
     isRunning?: boolean
+}
+
+interface Events {
+    [e: string]: boolean;
 }
 
 // ----- Classes -----
@@ -16,6 +21,8 @@ class Car implements AutonomousCar {
     constructor(props: AutonomousCarProps) {
         this.isRunning = props.isRunning
     }
+
+    respond: (events: Events) => void;
 }
 
 // ----- Executables -----
