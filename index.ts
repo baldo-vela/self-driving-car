@@ -40,6 +40,13 @@ class Car implements AutonomousCar {
     }
 }
 
+class SteeringControl implements Steering {
+    execute(command: string) {
+        console.log(`Executing: ${command}`);
+    }
+
+}
+
 // ----- Executables -----
 const autonomousCar =  new Car(
     {
