@@ -14,7 +14,7 @@ class Car implements AutonomousCar {
     isRunning;
     
     constructor(props: AutonomousCarProps) {
-
+        this.isRunning = props.isRunning
     }
 }
 
