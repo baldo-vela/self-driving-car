@@ -1,6 +1,6 @@
 import { getObstacleEvents } from './computer-vision';
 
-// ----- Types -----
+// ---------- Types -------------------------------------------------------
 interface AutonomousCar {
     isRunning?: boolean
     respond: (events: Events) => void;
@@ -23,7 +23,7 @@ interface Steering extends Control {
     turn: (direction: string) => void;
 }
 
-// ----- Classes -----
+// ---------- Classes -------------------------------------------------------
 class Car implements AutonomousCar {
     isRunning;
     
@@ -51,7 +51,7 @@ class SteeringControl implements Steering {
 
 }
 
-// ----- Executables -----
+// ---------- Executables -------------------------------------------------------
 const steering = new SteeringControl();
 steering.turn('right'); // Tests if "Executes: Turn right"
 
