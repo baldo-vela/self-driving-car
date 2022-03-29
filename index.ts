@@ -24,3 +24,5 @@ const autonomousCar =  new Car(
         isRunning: true
     }
 )
+
+console.log(`Is the Autonomous Car working? \n`, autonomousCar.isRunning);
