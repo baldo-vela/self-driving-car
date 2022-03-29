@@ -22,7 +22,9 @@ class Car implements AutonomousCar {
         this.isRunning = props.isRunning
     }
 
-    respond: (events: Events) => void;
+    respond(events: Events) {
+
+    }
 }
 
 // ----- Executables -----
