@@ -5,6 +5,10 @@ interface AutonomousCar {
     isRunning?: boolean
 }
 
+interface AutonomousCarProps {
+    isRunning?: boolean
+}
+
 // ----- Classes -----
 class Car implements AutonomousCar {
     isRunning;
