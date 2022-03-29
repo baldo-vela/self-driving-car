@@ -45,9 +45,16 @@ class SteeringControl implements Steering {
         console.log(`Executing: ${command}`);
     }
 
+    turn(direction: string) {
+        this.execute(`Turn ${direction}`);
+    }
+
 }
 
 // ----- Executables -----
+const steering = new SteeringControl();
+steering.turn('right'); // Tests if "Executes: Turn right"
+
 const autonomousCar =  new Car(
     {
         isRunning: true
