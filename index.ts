@@ -6,7 +6,7 @@ interface AutonomousCar {
 }
 
 // ----- Classes -----
-class Car {
+class Car implements AutonomousCar {
 
 }
 
