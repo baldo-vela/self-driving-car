@@ -8,6 +8,10 @@ interface AutonomousCar {
 // ----- Classes -----
 class Car implements AutonomousCar {
     isRunning;
+    
+    constructor(props) {
+
+    }
 }
 
 // ----- Executables -----
