@@ -23,7 +23,11 @@ class Car implements AutonomousCar {
     }
 
     respond(events: Events) {
-
+        if (this.isRunning) {
+            return console.log('Running...');
+        } else {
+            return console.log('Halted!');
+        }
     }
 }
 
@@ -34,4 +38,4 @@ const autonomousCar =  new Car(
     }
 )
 
-console.log(`Is the Autonomous Car working? \n`, autonomousCar.isRunning);
+autonomousCar.respond(getObstacleEvents());
