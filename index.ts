@@ -7,7 +7,7 @@ interface AutonomousCar {
 
 // ----- Classes -----
 class Car implements AutonomousCar {
-
+    isRunning;
 }
 
 // ----- Executables -----
