@@ -19,6 +19,10 @@ interface Control {
     execute: (command: string) => void;
 }
 
+interface Steering extends Control {
+    turn: (direction: string) => void;
+}
+
 // ----- Classes -----
 class Car implements AutonomousCar {
     isRunning;
