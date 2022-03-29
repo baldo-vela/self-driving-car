@@ -14,6 +14,11 @@ interface Events {
     [e: string]: boolean;
 }
 
+interface Control {
+    // This type and its type member will allow us to enforce that all controls for our cars must have an .execute() method.
+    execute: (command: string) => void;
+}
+
 // ----- Classes -----
 class Car implements AutonomousCar {
     isRunning;
