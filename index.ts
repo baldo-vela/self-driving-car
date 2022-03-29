@@ -13,7 +13,7 @@ interface AutonomousCarProps {
 class Car implements AutonomousCar {
     isRunning;
     
-    constructor(props) {
+    constructor(props: AutonomousCarProps) {
 
     }
 }
